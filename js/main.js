@@ -2,16 +2,14 @@
 var mensaje = ["Desarrollador de Buenos Aires, Argentina",
                 "Técnico Superior en Programación",
                 "Python", 
-                "Web, Aplicaciones de Escritorio, Scripting",
-                "Puede ver mis proyectos en GitHub o comunicarse a cwalternicolas@gmail.com"]
-var skills = [", Javascript",", C#",", PHP",", Docker", ", PyQt", ", Django", ", .NET", ", React"]
-var id = ['message','message2','message3','message4', 'message5']
-var time = [30, 40, 80, 110, 140];
+                "Web, Aplicaciones de Escritorio, Scripting"]            
+var skills = [", Javascript",", C#",", PHP",", JAVA", ", PyQt", ", Django", ", .NET", ", React"]
+var id = ['message','message2','message3','message4']
+var time = [30, 40, 80, 110];
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-
 
 async function main(){
     var i = 0;
