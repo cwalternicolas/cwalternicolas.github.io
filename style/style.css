@@ -2,6 +2,11 @@
 html, body{
     overflow-y: auto;
     background-image: url("../media/gal.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
 }
 
 
