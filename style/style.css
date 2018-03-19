@@ -14,11 +14,12 @@ html, body{
 
 
 .avatar{
+    animation: rotate 4s;
+    animation-iteration-count: infinite;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-
 
 .avatar:hover{
     animation: shake 0.5s;
@@ -32,8 +33,15 @@ html, body{
 }
 
 .social:hover{
-        animation: shake 0.5s;
+        animation: shake 2s;
         animation-iteration-count: infinite;
+    }
+
+    @keyframes rotate{
+        0% { transform: rotate(-20deg);}
+        20% { transform: rotate(-80deg);}
+        50% { transform: rotate(-80deg);}
+        100% { transform: rotate(0deg);}
     }
     
     @keyframes shake {
