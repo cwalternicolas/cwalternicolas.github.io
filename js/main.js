@@ -1,9 +1,9 @@
 'use strict' 
-var mensaje = ["Desarrollador de Buenos Aires, Argentina",
-                "Técnico Superior en Programación",
-                "Python", 
-                "Web, Aplicaciones de Escritorio, Scripting"]            
-var skills = [", Javascript",", C#",", PHP",", JAVA", ", PyQt", ", Django", ", .NET", ", React"]
+var mensaje = ["Software Developer",
+                "Buenos Aires, Argentina.",
+                "Freelancer mostly ", 
+                "cwalternicolas@gmail.com"]            
+var skills = ["Python Java & Javascript"]
 var id = ['message','message2','message3','message4']
 var time = [30, 40, 80, 110];
 

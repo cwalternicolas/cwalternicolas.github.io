@@ -1,15 +1,13 @@
-* {
-    box-sizing: border-box;
-}
+
 html, body, .container-fluid, .row{
-    height: 100%;
     overflow-y: auto;
+    background-image: url("../media/gal.jpg");
 }
 
+
 .avatar{
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -20,7 +18,6 @@ html, body, .container-fluid, .row{
 }
 
 .social{
-    vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -32,39 +29,44 @@ html, body, .container-fluid, .row{
     }
     
     @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
+        0%  { transform: translate(1px, 1px)  rotate(0deg);  }
+        10% { transform: translate(-1px, -2px)rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg);  }
+        30% { transform: translate(3px, 2px)  rotate(0deg);  }
+        40% { transform: translate(1px, -1px) rotate(1deg);  }
         50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg);  }
+        70% { transform: translate(3px, 1px)  rotate(-1deg); }
+        80% { transform: translate(-1px, -1px)rotate(1deg);  }
+        90% { transform: translate(1px, 2px)  rotate(0deg);  }
+        100%{ transform: translate(1px, -2px) rotate(-1deg); }
     }
 
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
-}
 
-ul {
-    padding-top: 20%;
-    padding-bottom: 20%;
 }
 
 p{
     color: white;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.p{
-    padding: 1%;
-    font-family: sans-serif;
-    font-size: 20px;
+.col{
+    background: rgba(0, 0, 0, 0.0);
+    padding: 3%;
+    align-content: center;
+    text-align: center;
+}
+
+footer{
+    padding: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
 }
