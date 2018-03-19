@@ -1,6 +1,6 @@
 
 html, body{
-    overflow-y: hidden;
+    overflow-y: auto;
     background-image: url("../media/gal.jpg");
     height: 100%;
     background-position: center;
