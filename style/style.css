@@ -2,6 +2,10 @@
 html, body, .container-fluid, .row{
     overflow-y: auto;
     background-image: url("../media/gal.jpg");
+    background-repeat:no-repeat;
+
+    background-size:cover;
+    background-position:center;
 }
 
 
