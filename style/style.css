@@ -2,7 +2,8 @@
 html, body, .container-fluid, .row{
     overflow-y: auto;
     background-image: url("../media/gal.jpg");
-    background-size: cover;
+    background-repeat: no repeat;
+    background: black;
     background-position:center;
 }
 
