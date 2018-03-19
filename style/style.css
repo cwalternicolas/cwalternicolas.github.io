@@ -2,8 +2,6 @@
 html, body{
     overflow-y: auto;
     background-image: url("../media/gal.jpg");
-    background-repeat:no-repeat;
-    background-position:center;
 }
 
 
