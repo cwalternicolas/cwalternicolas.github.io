@@ -1,11 +1,15 @@
 
 html, body{
     overflow-y: auto;
-    background-image: url("../media/gal.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow-x: auto;
+    background-color: rgb(21, 21, 65);
+    background-image: linear-gradient(
+        to right,
+        black,
+        rgb(4, 4, 22),
+        rgb(38, 38, 82),
+        black
+    );
  }
 
 
