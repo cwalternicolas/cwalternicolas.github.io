@@ -1,5 +1,5 @@
 
-html, body{
+html, body{    
     overflow-y: auto;
     overflow-x: auto;
     background-color: rgb(21, 21, 65);
@@ -12,8 +12,11 @@ html, body{
     );
  }
 
+    /* MEDIA & ANIMATIONS */
 
 .avatar{
+    animation: shake 10s;
+    animation-iteration-count: infinite;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -23,18 +26,8 @@ html, body{
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
-
-.social{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.social:hover{
-        animation: rotate 1s;
-        animation-iteration-count: infinite;
-    }
-
+    
+    /*
     @keyframes rotate{
         0% { transform: rotate(20deg);}
         30% { transform: rotate(80deg);}
@@ -44,7 +37,9 @@ html, body{
         90% { transform: rotate(320deg);}
         100% { transform: rotate(0deg);}
     }
-    
+
+
+    */ 
     @keyframes shake {
         0%  { transform: translate(1px, 1px)  rotate(0deg);  }
         10% { transform: translate(-1px, -2px)rotate(-1deg); }
@@ -65,31 +60,84 @@ img{
     margin-right: auto;
 
 }
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
 
-p{
-    animation: shake 5s;
-    animation-iteration-count: infinite;
+
+
+    /* FONTS */
+
+article p{
+    
     color: white;
     font-family: sans-serif;
     font-size: 20px;
 }
 
-p:hover{
-    background-color: black;
+nav p{
+    color: white;
+    font-family: sans-serif; 
+    font-size: 16px;
 }
 
-.col{
-    background: rgba(0, 0, 0, 0.0);
-    padding: 3%;
-    align-content: center;
+nav p:hover{
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+
+
+
+    /* LAYOUTS */
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     text-align: center;
 }
 
-footer{
-    padding: 2px;
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
+.flex-container > * {
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: center;
+}
+
+.nav ul {
+    padding-top: 20px;
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+
+@media all and (min-width: 768px) {
+    .nav {
+        text-align: center;
+        -webkit-flex: 1 auto;
+        flex:1 auto;
+        -webkit-order:1;
+        order: 1;
+        width: 25%;
+    }
+
+    .article {
+        -webkit-flex:5 0px;
+        flex:5 0px;
+        -webkit-order:2;
+        order:2;
+    }
 }
